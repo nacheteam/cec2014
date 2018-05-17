@@ -11,16 +11,21 @@ El código original ha sido obtenido de:
 
 Los requisitos necesarios son:
 
-- Python 3
-- Cython 3
-- NumPy
+- Python 3 (probado con Python 3.5.2)
+- Cython 3 (probado con Cython 0.28.2)
+- NumPy (probado con NumPy 1.14.1)
 
-En distribuciones derivadas de Debian ejecuta `make debian-install` como administrador para instalar las dependencias necesarias. En otras distribuciones necesitas instalar manualmente el paquete de desarrollo de Python 3 y Cython.
+En distribuciones derivadas de Debian como Ubuntu ejecuta `make debian-install` como administrador para instalar las dependencias necesarias. En otras distribuciones necesitas instalar manualmente Cython y el paquete de desarrollo de Python 3.
 
 Ejecuta `make build` para crear la librería.
 
 # Uso
 
-TODO
+Utiliza la clase `Benchmark` del módulo `benchmark` para obtener cada función así como su valor óptimo e información asociada.
+
+Alternativamente puedes utilizar directamente el módulo `cec2014` que exporta la función `cec14(x,i)`.
+Esta función evalúa un array de NumPy `x` respecto de la función objetivo número `i`.
+
+**Importante:** un fallo en las dimensiones o en el tipo de los elementos (deben ser `float`) provocará un error irrecuperable.
 
 
