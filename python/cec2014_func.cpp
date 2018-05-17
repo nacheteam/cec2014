@@ -1315,7 +1315,7 @@ void cf_cal(double *x, double *f, int nx, double *Os,double * delta,double * bia
 }
 
 double cec14_test_func_rev(double * x, int nx, int func_num){
-  double* f = (double*)malloc(sizeof(double));
+  double f[1];
   cec14_test_func(x, f, nx, 1, func_num);
   return f[0];
 }
