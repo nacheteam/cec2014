@@ -43,3 +43,11 @@ def getInfo(i):
     @return Devuelve un diccionario con los campos inf, sup y minimo con los datos del valor inferior de cada componente, el valor superior y el valor mínimo de la función.
     '''
     return {'inf': getLimInf(), 'sup': getLimSup(), 'minimo': getFuncMinValor(i)}
+
+def getFuncion(i):
+    '''
+    @brief Función que devuelve la función objetivo i-ésima.
+    @param i Función i-ésima a devolver.
+    @return Devuelve la función i-ésima del Benchmark.
+    '''
+    return getFunciones()[i]
