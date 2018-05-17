@@ -24,15 +24,15 @@ En él se proporcionan dos funciones:
 - **cec14_func_eval:**
   Evalúa un punto sobre la función del cec que quieras
   ```julia
-  # Evalúa el punto (0, 0) (de dimensión 2) sobre la primera función del cec.
-  cec14_func_eval(1, [0,0], 2) # 3.279714013173407e8
+  # Evalúa el punto (0, 0) sobre la primera función del cec.
+  cec14_func_eval(1, [0,0]) # 3.279714013173407e8
   ```
   
 - **cec14_func:**
   Devuelve la función del cec que quieras
   ```julia
-  # Primera función del cec para dimensión 2.
-  f = cec14_func(1, 2)
+  # Primera función del cec.
+  f = cec14_func(1)
   # Evalúa la función en el (0, 0)
   f([0,0]) # 3.279714013173407e8
   ```
@@ -43,9 +43,11 @@ En él se proporcionan dos funciones:
 
 - Los límites de búsqueda para todas las funciones son \[-100, 100\] (en la dimensión correspondiente)
 
-- El óptimo de las funciones es 100\*numero\_funcion. Es decir 100 para la primera función, 200 para la segunda, etc.
+- El óptimo de las funciones es 100\*número\_función. Es decir 100 para la primera función, 200 para la segunda, etc.
 
 - El óptimo se alcanza en el punto guardado en cec2014\_data/shift\_data\_x.txt donde x es el número de la función.
+
+- La dimensión debe ser 2, 10, 20, 30, 50 o 100.
 
 
 ## Contribuciones
