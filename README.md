@@ -8,3 +8,4 @@ El código original ha sido obtenido de:
 # Versiones disponibles
 
 - [Python](https://github.com/nacheteam/cec2014/tree/master/python)
+- [Julia](https://github.com/nacheteam/cec2014/tree/master/julia)
