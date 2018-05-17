@@ -7,4 +7,4 @@ El código original ha sido obtenido de:
 
 # Versiones disponibles
 
-- [Python](/tree/master/python)
+- [Python](https://github.com/nacheteam/cec2014/tree/master/python)
