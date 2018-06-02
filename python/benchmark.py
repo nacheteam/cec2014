@@ -11,7 +11,7 @@ class Benchmark:
         @brief Función que devuelve una lista con las 20 funciones implementadas.
         @return Devuelve un vector con las funciones.
         '''
-        return [lambda x: cec2014.cec14(x,i) for i in range(1,num_funciones+1)]
+        return [lambda x: cec2014.cec14(x,i) for i in range(1,self.num_funciones+1)]
 
     def getNumFunciones(self):
         '''
